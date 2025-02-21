@@ -2,7 +2,7 @@ const renderProfile = (req, res) => {
   res.render("profile", {title: "내 정보 - NodeBird"});
 }
 
-const renderHome = (req, res) => {
+const renderJoin = (req, res) => {
   res.render("join", {title: "회원 가입 - NodeBird"});
 }
 
@@ -12,4 +12,10 @@ const renderMain = (req, res, next) => {
     title: "NodeBird",
     twits,
   });
+};
+
+module.exports = {
+  renderProfile,
+  renderJoin,
+  renderMain,
 };
